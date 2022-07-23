@@ -32,8 +32,7 @@ user callback to feed a queue. If you write your port so that
 ``send()``, ``receive()`` and ``poll()`` are thread safe the rest of
 the rest of the API will be as well.
 
-For ports that do actual I/O (MIDI devices, sockets, files, pipes
-etc.) it is always best for the port itself to ensure thread
+For ports that do actual I/O (MIDI devices, sockets, files, pipes, etc.) it is always best for the port itself to ensure thread
 safety. It's less clear what to do for utility ports like
 ``MultiPort``.
 
